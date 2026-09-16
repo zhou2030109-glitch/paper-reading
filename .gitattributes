@@ -1,0 +1,8 @@
+# 统一换行，避免 Windows/Linux 协作时整文件 diff
+* text=auto
+
+# PowerShell 脚本必须是 CRLF + UTF-8 BOM（Windows PowerShell 5.1 才不会把中文按 GBK 解析）
+*.ps1 text eol=crlf
+
+*.md text eol=lf
+*.pdf binary
